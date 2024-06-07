@@ -7,7 +7,7 @@ window.onload = () => {
   //console.log("Hello Rigo from the console!");
 };
 function generateExcuse() {
-  let who = ["El perro", "Mi abuela", "El cartero", "Mi pájaro"];
+  let who = ["El perro", "Alguien", "Un extraterrestre", "Mi pájaro"];
   let action = ["se comió", "orinó", "aplastó", "rompió"];
   let what = ["mi tarea", "mi teléfono", "el auto"];
   let when = [
@@ -23,13 +23,19 @@ function generateExcuse() {
   let whatIndex = Math.floor(Math.random() * what.length);
   let whenIndex = Math.floor(Math.random() * when.length);
 
+  // return (
+  //   who[whoIndex] +
+  //   " " +
+  //   action[actionIndex] +
+  //   " " +
+  //   what[whatIndex] +
+  //   " " +
+  //   when[whenIndex]
+  // );
   return (
-    who[whoIndex] +
-    " " +
-    action[actionIndex] +
-    " " +
-    what[whatIndex] +
-    " " +
-    when[whenIndex]
+    `<span class="who">${who[whoIndex]}</span> ` +
+    `<span class="action">${action[actionIndex]}</span> ` +
+    `<span class="what">${what[whatIndex]}</span> ` +
+    `<span class="when">${when[whenIndex]}</span>`
   );
 }

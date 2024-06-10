@@ -4,7 +4,6 @@ import "./style.css";
 
 window.onload = () => {
   document.querySelector("#excuse").innerHTML = generateExcuse();
-  //console.log("Hello Rigo from the console!");
 };
 function generateExcuse() {
   let who = ["El perro", "Alguien", "Un extraterrestre", "Mi pájaro"];
